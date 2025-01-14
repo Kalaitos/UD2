@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Información - MiMascota</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header style="text-align: center; padding: 20px;">
+        <h1>MiMascota - Tu tienda de mascotas</h1>
+    </header>
+    <main style="padding: 0 20px;">
+        <h2 style="color: #588157; font-family: 'Amatic SC', cursive;">Formulario de Información</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset style="border: 1px solid #a3b18a; padding: 10px; margin-bottom: 20px;">
+                <legend style="font-weight: bold;">Sus Datos</legend>
+                <label for="nombre">Nombre y apellidos:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="contrasena">Contraseña:</label><br>
+                <input type="password" id="contrasena" name="contrasena" required><br><br>
+                
+                <label for="usuario">Usuario:</label><br>
+                <input type="text" id="usuario" name="usuario" value="anónimo" readonly><br><br>
+                
+                <label for="nivel">Nivel:</label><br>
+                <input type="radio" id="profesional" name="nivel" value="profesional">
+                <label for="profesional">Profesional</label><br>
+                <input type="radio" id="avanzado" name="nivel" value="avanzado" checked>
+                <label for="avanzado">Avanzado</label><br>
+                <input type="radio" id="principiante" name="nivel" value="principiante">
+                <label for="principiante">Principiante</label><br><br>
+            </fieldset>
+            
+            <label for="nacionalidad">Nacionalidad:</label><br>
+            <select id="nacionalidad" name="nacionalidad">
+                <option value="espana" selected>España</option>
+                <!-- Añade más opciones aquí según sea necesario -->
+            </select><br><br>
+            
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea><br><br>
+            
+            <input type="checkbox" id="info" name="info" checked>
+            <label for="info">Deseo recibir información sobre novedades y ofertas</label><br><br>
+            
+            <input type="checkbox" id="condiciones" name="condiciones" required>
+            <label for="condiciones">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label><br><br>
+            
+            <label for="foto">Adjuntar foto:</label><br>
+            <input type="file" id="foto" name="foto"><br><br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar datos">
+        </form>
+    </main>
+</body>
+</html>
